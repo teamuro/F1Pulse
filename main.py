@@ -32,7 +32,7 @@ dp.include_router(router)
 
 user_data = {}
 
-fastf1.Cache.enable_cache('W:/F1Pulse')
+fastf1.Cache.enable_cache('/opt/render/project/src/F1Pulse')
 
 logging.basicConfig(level=logging.INFO)
 
