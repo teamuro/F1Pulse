@@ -15,6 +15,13 @@ from datetime import datetime, timedelta,date
 from aiogram.exceptions import TelegramBadRequest
 
 
+const port = process.env.PORT || 10000;
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
+});
+
+
+
 def find_image(filename):
     for root, dirs, files in os.walk('.'):
         if filename in files:
