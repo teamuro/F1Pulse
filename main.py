@@ -15,7 +15,7 @@ from datetime import datetime, timedelta,date
 from aiogram.exceptions import TelegramBadRequest
 
 
-const port = process.env.PORT || 10000;
+port = int(os.environ.get('PORT', 10000))
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
